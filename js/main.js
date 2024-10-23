@@ -14,7 +14,7 @@ const personalTicketInfo = document.getElementById("personal-ticket-info");
 personalTicketInfo.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const name = nameIput.value;
-  const kilometers = nameIput.value;
-  const ageRange = nameIput.value;
+  const name = nameIput.value.trim();
+  const kilometers = nameIput.value.trim();
+  const ageRange = nameIput.value.trim();
 });
