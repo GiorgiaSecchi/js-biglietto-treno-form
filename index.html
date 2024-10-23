@@ -38,11 +38,17 @@
 
       <!-- FORM GENERA-->
       <div class="my-5 p-4 border border-2 shadow-sm rounded">
-        <form class="row">
+        <form class="row" id="personal-ticket-info">
           <!-- NOME -->
           <div class="col-4">
             <label for="input-Name" class="form-label">Nome e Cognome</label>
-            <input type="text" id="input-Name" class="form-control" />
+            <input
+              type="text"
+              id="input-Name"
+              class="form-control"
+              required
+              value=" "
+            />
           </div>
 
           <!-- KM -->
@@ -50,17 +56,28 @@
             <label for="input-Kilometers" class="form-label"
               >Km da percorrere</label
             >
-            <input type="text" id="input-Kilometers" class="form-control" />
+            <input
+              type="text"
+              id="input-Kilometers"
+              class="form-control"
+              required
+              value=" "
+            />
           </div>
 
           <!-- ETà -->
           <div class="col-4">
             <label for="input-AgeRange" class="form-label">Fascia d'ètà</label>
-            <select id="input-AgeRange" class="form-select" aria-label="select">
-              <option selected>Scegli</option>
-              <option value="1">Under 18</option>
-              <option value="2">Over 65</option>
-              <option value="3">Trai i 18-64 anni</option>
+            <select
+              id="input-AgeRange"
+              class="form-select"
+              aria-label="Scegli"
+              required
+            >
+              <!-- <option selected>Scegli</option> -->
+              <option value="1">18-64 anni</option>
+              <option value="2">Under 18</option>
+              <option value="3">Over 65</option>
             </select>
           </div>
 
