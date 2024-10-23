@@ -41,22 +41,22 @@
         <form class="row">
           <!-- NOME -->
           <div class="col-4">
-            <label for="inputName" class="form-label">Nome e Cognome</label>
-            <input type="text" id="inputName" class="form-control" />
+            <label for="input-Name" class="form-label">Nome e Cognome</label>
+            <input type="text" id="input-Name" class="form-control" />
           </div>
 
           <!-- KM -->
           <div class="col-4">
-            <label for="inputKilometers" class="form-label"
+            <label for="input-Kilometers" class="form-label"
               >Km da percorrere</label
             >
-            <input type="text" id="inputKilometers" class="form-control" />
+            <input type="text" id="input-Kilometers" class="form-control" />
           </div>
 
           <!-- ETà -->
           <div class="col-4">
-            <label for="inputAgeRange" class="form-label">Fascia d'ètà</label>
-            <select class="form-select" aria-label="select">
+            <label for="input-AgeRange" class="form-label">Fascia d'ètà</label>
+            <select id="input-AgeRange" class="form-select" aria-label="select">
               <option selected>Scegli</option>
               <option value="1">Under 18</option>
               <option value="2">Over 65</option>
@@ -66,8 +66,12 @@
 
           <!-- BOTTONI -->
           <div class="p-4">
-            <button type="submit" class="btn btn-primary">Genera</button>
-            <button type="submit" class="btn btn-secondary">Annulla</button>
+            <button id="submit-button" type="submit" class="btn btn-primary">
+              Genera
+            </button>
+            <button id="cancel-button" type="submit" class="btn btn-secondary">
+              Annulla
+            </button>
           </div>
         </form>
       </div>
