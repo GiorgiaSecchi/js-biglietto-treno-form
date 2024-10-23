@@ -1,9 +1,11 @@
-const nameIput = document.getElementById("input-Name");
-const kilometersIput = document.getElementById("input-Kilometers");
-const ageRangeIput = document.getElementById("input-AgeRange");
-const submitButtonIput = document.getElementById("submit-button");
-const cancelButtonIput = document.getElementById("cancel-button");
+const nameInput = document.getElementById("input-Name");
+const kilometersInput = document.getElementById("input-Kilometers");
+const ageRangeInput = document.getElementById("input-AgeRange");
+const submitButtonInput = document.getElementById("submit-button");
+const cancelButtonnIput = document.getElementById("cancel-button");
 const personalTicketInfo = document.getElementById("personal-ticket-info");
+
+const nameOutput = document.getElementById("output-name");
 
 // console.log(nameIput);
 // console.log(kilometersIput);
@@ -11,10 +13,16 @@ const personalTicketInfo = document.getElementById("personal-ticket-info");
 // console.log(submitButtonIput);
 // console.log(cancelButtonIput);
 
-personalTicketInfo.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const name = nameIput.value.trim();
-  const kilometers = nameIput.value.trim();
-  const ageRange = nameIput.value.trim();
+submitButtonInput.addEventListener("click", () => {
+  text = nameInput.value.trim();
+  nameOutput.textContent = text;
 });
+
+// personalTicketInfo.addEventListener("submit", (event) => {
+//   event.preventDefault();
+
+//   const name = nameInput.value.trim();
+//   const kilometers = kilometersInput.value.trim();
+//   const ageRange = ageRangeInput.value.trim();
+
+// });
