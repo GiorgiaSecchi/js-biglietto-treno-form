@@ -6,6 +6,7 @@ const cancelButtonnIput = document.getElementById("cancel-button");
 const personalTicketInfo = document.getElementById("personal-ticket-info");
 
 const nameOutput = document.getElementById("output-name");
+const discontOutput = document.getElementById("output-discont");
 const priceOutput = document.getElementById("output-price");
 
 // console.log(nameIput);
@@ -50,6 +51,10 @@ personalTicketInfo.addEventListener("submit", (event) => {
   console.log(`fullTicketPrice: ` + fullTicketPrice);
   console.log(`discountEur: ` + discountEur);
   console.log(`finalPriceText: ` + finalPriceText);
+
+  nameOutput.innerText = name;
+  discontOutput.innerText = ticketText;
+  priceOutput.innerText = finalPriceText;
 });
 
 // personalTicketInfo.addEventListener("submit", (event) => {
