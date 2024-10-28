@@ -14,11 +14,6 @@ const priceOutput = document.getElementById("output-price");
 // console.log(submitButtonIput);
 // console.log(cancelButtonIput);
 
-// const ageRangeInIput = ageRangeInIput.value;
-
-// const kilometers = Number(kilometersInput.value);
-// console.log(kilometers);
-
 // let milesPrice = 0.21;
 // const ticketPrice = kilometers * milesPrice;
 // // priceOutput.textContent = ticketPrice;
@@ -32,6 +27,29 @@ personalTicketInfo.addEventListener("submit", (event) => {
   const ageRange = ageRangeInIput.value;
 
   console.log(name, kilometers, ageRange);
+
+  const milesPrice = 0.21;
+  const fullTicketPrice = kilometers * milesPrice;
+  // console.log(fullTicketPrice);
+
+  let ticketText = "Biglietto Standard";
+  let discountPerc = 0;
+
+  if (ageRange === "Under 18") {
+    discountPerc = 20;
+    ticketText = "Biglietto Under 18";
+  } else if (ageRange === "Over 65") {
+    discountPerc = 40;
+    ticketText = "Biglietto Over 65";
+  }
+
+  let discountEur = (fullTicketPrice * discountPerc) / 100;
+  let finalPrice = fullTicketPrice - discountEur;
+  const finalPriceText = `€ ${finalPrice.toFixed(2)}`;
+
+  console.log(`fullTicketPrice: ` + fullTicketPrice);
+  console.log(`discountEur: ` + discountEur);
+  console.log(`finalPriceText: ` + finalPriceText);
 });
 
 // personalTicketInfo.addEventListener("submit", (event) => {
