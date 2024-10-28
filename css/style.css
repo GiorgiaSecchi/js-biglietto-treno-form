@@ -1,0 +1,9 @@
+body {
+  background-color: cornflowerblue;
+}
+
+form,
+#form-div,
+#ticket-div {
+  background-color: whitesmoke;
+}

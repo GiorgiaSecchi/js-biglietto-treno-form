@@ -34,14 +34,18 @@
   <body>
     <div class="container text-center my-5">
       <!-- TITOLO -->
-      <h1 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <h1 class="text-center text-white">
+        CALCOLA IL PREZZO DEL TUO BIGLIETTO
+      </h1>
 
       <!-- FORM GENERA-->
-      <div class="my-5 p-4 border border-2 shadow-sm rounded">
+      <div id="form-div" class="my-5 p-4 border border-2 shadow-sm rounded">
         <form class="row" id="personal-ticket-info">
           <!-- NOME -->
           <div class="col-4">
-            <label for="input-Name" class="form-label">Nome e Cognome</label>
+            <label for="input-Name" class="form-label fw-medium"
+              >Nome e Cognome</label
+            >
             <input
               type="text"
               id="input-Name"
@@ -53,7 +57,7 @@
 
           <!-- KM -->
           <div class="col-4">
-            <label for="input-Kilometers" class="form-label"
+            <label for="input-Kilometers" class="form-label fw-medium"
               >Km da percorrere</label
             >
             <input
@@ -68,7 +72,9 @@
 
           <!-- ETà -->
           <div class="col-4">
-            <label for="age-range" class="form-label">Fascia d'ètà</label>
+            <label for="age-range" class="form-label fw-medium"
+              >Fascia d'ètà</label
+            >
             <select
               id="age-range"
               class="form-select"
@@ -95,28 +101,28 @@
       </div>
 
       <!-- BIGLIETTO  -->
-      <h2>IL TUO BIGLIETTO</h2>
-      <div class="text-start p-4 border border-2 shadow-sm">
+      <h2 class="text-white">IL TUO BIGLIETTO</h2>
+      <div id="ticket-div" class="text-start p-4 border border-2 shadow-sm">
         <h3 class="fs-6">DETTAGLIO PASSEGGERI</h3>
         <div class="row border-top border-bottom">
           <div class="col-4 p-3 bg-primary text-white">
-            <h4 class="fs-6">NOME PASSEGGERO</h4>
-            <h5 id="output-name" class="fs-6"></h5>
+            <h4 class="fs-6">NOME PASSEGGERO:</h4>
+            <h5 id="output-name" class="fs-6 fst-italic"></h5>
           </div>
           <div class="col">
-            <p>Offerta</p>
+            <p class="fw-medium">Offerta</p>
             <p id="output-discont"></p>
           </div>
           <div class="col">
-            <p>Carrozza</p>
+            <p class="fw-medium">Carrozza</p>
             <p>5</p>
           </div>
           <div class="col">
-            <p>Codice CP</p>
+            <p class="fw-medium">Codice CP</p>
             <p>99270</p>
           </div>
           <div class="col">
-            <p>Prezzo</p>
+            <p class="fw-medium">Prezzo</p>
             <p id="output-price"></p>
           </div>
         </div>

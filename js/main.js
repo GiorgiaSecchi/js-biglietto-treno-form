@@ -56,12 +56,3 @@ personalTicketInfo.addEventListener("submit", (event) => {
   discontOutput.innerText = ticketText;
   priceOutput.innerText = finalPriceText;
 });
-
-// personalTicketInfo.addEventListener("submit", (event) => {
-//   event.preventDefault();
-
-//   const name = nameInput.value.trim();
-//   const kilometers = kilometersInput.value.trim();
-//   const ageRangeInIput = ageRangeInIput.value.trim();
-
-// });
