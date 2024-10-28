@@ -57,9 +57,10 @@
               >Km da percorrere</label
             >
             <input
-              type="text"
+              type="number"
               id="input-Kilometers"
               class="form-control"
+              min="10"
               required
               value=""
             />
@@ -67,17 +68,17 @@
 
           <!-- ETà -->
           <div class="col-4">
-            <label for="input-AgeRange" class="form-label">Fascia d'ètà</label>
+            <label for="age-range" class="form-label">Fascia d'ètà</label>
             <select
-              id="input-AgeRange"
+              id="age-range"
               class="form-select"
               aria-label="Scegli"
               required
             >
               <!-- <option selected>Scegli</option> -->
-              <option value="1">18-64 anni</option>
-              <option value="2">Under 18</option>
-              <option value="3">Over 65</option>
+              <option>18-64 anni</option>
+              <option>Under 18</option>
+              <option>Over 65</option>
             </select>
           </div>
 
@@ -86,7 +87,7 @@
             <button id="submit-button" type="submit" class="btn btn-primary">
               Genera
             </button>
-            <button id="cancel-button" type="submit" class="btn btn-secondary">
+            <button id="cancel-button" type="reset" class="btn btn-secondary">
               Annulla
             </button>
           </div>
